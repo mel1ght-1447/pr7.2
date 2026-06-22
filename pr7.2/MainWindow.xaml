@@ -1,0 +1,23 @@
+﻿<Window x:Class="pr7._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr7._2"
+        mc:Ignorable="d"
+        Title="Practical work 7.2" Height="450" Width="800">
+    <Grid Background="#FFD0CEB3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Input" Click="InputItem_Click" x:Name="InputItem" InputGestureText="Ctrl+I"/>
+                <MenuItem Header="Exit" Click="ExitItem_Click" x:Name="ExitItem" InputGestureText="Ctrl+E"/>
+            </MenuItem>
+            <MenuItem Header="About" Click="AboutItem_Click" x:Name="AboutItem">
+            </MenuItem>
+        </Menu>
+        <Label Content ="Use the menu to enter parameters and calculate the area of a rhombus." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+    </Grid>
+</Window>
