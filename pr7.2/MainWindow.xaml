@@ -17,9 +17,9 @@
             <MenuItem Header="File">
                 <MenuItem Header="Input" Click="InputItem_Click" x:Name="InputItem" InputGestureText="Ctrl+I"/>
                 <MenuItem Header="Exit" Click="ExitItem_Click" x:Name="ExitItem" InputGestureText="Ctrl+E"/>
+                <MenuItem Header="About" Click="AboutItem_Click" x:Name="AboutItem" InputGestureText="Ctrl+A"/>
             </MenuItem>
-            <MenuItem Header="About" Click="AboutItem_Click" x:Name="AboutItem">
-            </MenuItem>
+            
         </Menu>
         <Label Content ="Use the menu to enter parameters and calculate the area of a rhombus." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
     </Grid>
