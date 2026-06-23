@@ -38,7 +38,7 @@
         <TextBox x:Name="tBRadius" HorizontalAlignment="Left" Margin="147,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18" Grid.Row="1"/>
         <Label Content="Diagonal1" HorizontalAlignment="Left" Margin="64,47,0,0" VerticalAlignment="Top" Height="26" Width="64" Grid.Row="1" RenderTransformOrigin="0.314,0.467"/>
         <Label Content="Diagonal2" HorizontalAlignment="Left" Margin="64,77,0,0" VerticalAlignment="Top" Height="26" Width="64" Grid.Row="1"/>
-        <Label Content="Angel" HorizontalAlignment="Left" Margin="64,109,0,0" VerticalAlignment="Top" Height="28" Grid.Row="1" Width="41" RenderTransformOrigin="0.5,0.5">
+        <Label Content="Angle" HorizontalAlignment="Left" Margin="64,109,0,0" VerticalAlignment="Top" Height="28" Grid.Row="1" Width="41" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -50,11 +50,12 @@
         </Label>
         <Label Content="Side" HorizontalAlignment="Left" Margin="64,140,0,0" VerticalAlignment="Top" Height="26" Grid.Row="1" Width="34"/>
         <Label Content="Radius" HorizontalAlignment="Left" Margin="64,178,0,0" VerticalAlignment="Top" Height="24" Grid.Row="1" Width="45"/>
-        <RadioButton  x:Name="rBSquare" Content="Square" HorizontalAlignment="Left" Margin="130,17,0,0" VerticalAlignment="Top" Height="15" Width="56" Grid.Row="1"/>
         <Label Content="Formulas for finding the area of a diamond:" HorizontalAlignment="Right" Margin="0,14,48,0" VerticalAlignment="Top" Width="244" Height="32" Grid.Row="1" Grid.Column="1"/>
         <Label Content="S = a * a * sin(α)" HorizontalAlignment="Right" Margin="0,112,104,0" VerticalAlignment="Top" Grid.Column="1" Width="118" Height="36" Grid.Row="1"/>
         <Label Content="S = d1 * d2 / 2" HorizontalAlignment="Right" Margin="0,82,96,0" VerticalAlignment="Top" Grid.Column="1" Width="126" Height="30" Grid.Row="1"/>
         <Label Content="S = a * r" HorizontalAlignment="Right" Margin="0,51,140,0" VerticalAlignment="Top" Grid.Column="1" Width="60" Height="29" Grid.Row="1"/>
+        <Button x:Name="btnCalc" Content="Calculate" HorizontalAlignment="Left" Margin="173,17,0,0" Grid.Row="2" VerticalAlignment="Top" Background="LightGreen" Click="btnCalc_Click"/>
+        <CheckBox x:Name="Square" Content="Square" HorizontalAlignment="Left" Margin="128,15,0,0" Grid.Row="1" VerticalAlignment="Top" Width="64" IsChecked="False"/>
 
     </Grid>
 </Window>
