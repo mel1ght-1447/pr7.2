@@ -5,13 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pr7._2"
         mc:Ignorable="d"
-        Title="About Programm" Height="450" Width="800">
-    <Grid Background="#FFD0CEB3">
-        <Label Content="Practical work 7.2" HorizontalAlignment="Center" Margin="0,174,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label Content="Made by Bykov Maxim" HorizontalAlignment="Center" Margin="0,234,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Menu VerticalAlignment="Top">
+        Title="About Programm" Height="450" Width="800" MaxHeight="700" MaxWidth="1100">
+    <Window.Background>
+        <ImageBrush Stretch="Fill" Opacity="1">
+            <ImageBrush.ImageSource>/images.png</ImageBrush.ImageSource>
+        </ImageBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="37*"/>
+
+
+        </Grid.RowDefinitions>
+
+        <Label Content="Practical work 7.2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,12,0,0" FontSize="16" Height="32" Grid.Row="1" Width="132"/>
+        <Label Content="Made by Bykov Maxim"  HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" Margin="0,57,0,0" Height="32" Grid.Row="1" Width="170"/>
+        <Menu VerticalAlignment="Top" Height="18">
             <MenuItem Header="Back" InputGestureText="Ctrl+B">
             </MenuItem>
         </Menu>
+
     </Grid>
 </Window>

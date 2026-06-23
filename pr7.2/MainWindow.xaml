@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pr7._2"
         mc:Ignorable="d"
-        Title="Practical work 7.2" Height="450" Width="800">
-    <Grid Background="#FFD0CEB3">
+        Title="Practical work 7.2" Height="450" Width="800" MaxHeight="700" MaxWidth="1100">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/images.png"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
